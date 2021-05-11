@@ -39,7 +39,7 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
     console.log("**FORM**");
     //get all posts (object to list)
-    this.postsList = JSON.parse(localStorage.getItem("test11"));
+    this.postsList = JSON.parse(localStorage.getItem("jsonPostsData"));
     //get user name from service for json data
     this.subs = this.simpleService.userName
       .subscribe(name => this.userName = name)

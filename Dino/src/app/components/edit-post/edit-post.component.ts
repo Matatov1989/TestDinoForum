@@ -68,7 +68,7 @@ export class EditPostComponent implements OnInit, OnDestroy {
     }
 
     //get all posts (object to list)
-    this.postsList = JSON.parse(localStorage.getItem("test11"));
+    this.postsList = JSON.parse(localStorage.getItem("jsonPostsData"));
 
     //get user name from service for json data
     this.subs = this.simpleService.userName
@@ -109,7 +109,7 @@ export class EditPostComponent implements OnInit, OnDestroy {
     //add a new post to list
     this.postsList.push(this.postData);
     //save json to local storage
-    localStorage.setItem("test11", JSON.stringify(this.postsList));
+    localStorage.setItem("jsonPostsData", JSON.stringify(this.postsList));
   }
 
   //update post by id post
@@ -118,7 +118,7 @@ export class EditPostComponent implements OnInit, OnDestroy {
       if (post.id == this.idPost) {
         post.text = this.message; //set new text
         //save json to local storage
-        localStorage.setItem("test11", JSON.stringify(this.postsList));
+        localStorage.setItem("jsonPostsData", JSON.stringify(this.postsList));
         break;
       }
     }
@@ -136,7 +136,7 @@ export class EditPostComponent implements OnInit, OnDestroy {
         //add new comment to post
         post.comments.push(this.commentData);
         //save json to local storage
-        localStorage.setItem("test11", JSON.stringify(this.postsList));
+        localStorage.setItem("jsonPostsData", JSON.stringify(this.postsList));
         break;
       }
     }

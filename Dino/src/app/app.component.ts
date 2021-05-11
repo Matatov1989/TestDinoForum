@@ -41,7 +41,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     console.log("*START*");
 
-    localStorage.setItem("test11", JSON.stringify(this.postsList));
+    localStorage.setItem("jsonPostsData", JSON.stringify(this.postsList));
     //open welcome dialog for enter user name
     this.openDialog();
   }
