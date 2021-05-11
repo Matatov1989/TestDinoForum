@@ -8,22 +8,22 @@ Time in milliseconds is used as id.
 Example:
 ```json
 [
-	{
-		"id":1289981520000,
-		"name":"Tom York",
-		"date":"Nov 17, 2010, 08:12",
-		"text":"Choose a job you love, and you will never have to work a day in your life.",
-		"comments":[
-			{
-				"name":"Stive Melony",
-				"text":"World belongs to the patient.."
-			},
-			{
-				"name":"Jane Washington",
-				"text":"Every solution breeds new problems."
-			}
-		]
-	}
+  {
+    "id":1289981520000,
+	"name":"Tom York",
+	"date":"Nov 17, 2010, 08:12",
+	"text":"Choose a job you love, and you will never have to work a day in your life.",
+	"comments":[
+	  {
+	    "name":"Stive Melony",
+		"text":"World belongs to the patient.."
+	  },
+	  {
+	    "name":"Jane Washington",
+		"text":"Every solution breeds new problems."
+	  }
+	]
+  }
 ]
 ```
 For using the application, a user needs to enter his name in a dialog window.
