@@ -1,0 +1,35 @@
+<!-- POST CARD -->
+<div class="main-div" *ngFor="let post of postsList" >
+  <mat-card class="example-card" width="250">
+    <mat-card-header>
+      <mat-card-title>{{post.name}}</mat-card-title>
+      <mat-card-subtitle>{{post.date}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content [innerHTML]="post.text"></mat-card-content>
+
+    <!-- if user log in than enable buttons -->
+    <!-- else - open snack bar with message -->
+    <div *ngIf="userName != error; else disable">
+      <mat-card-actions>
+        <button mat-button (click)="onClickBtn(post, 'edit')">edit</button>
+        <button mat-button (click)="onClickBtn(post, 'comment')">comment</button>
+      </mat-card-actions>
+    </div>
+    <ng-template #disable>
+      <mat-card-actions>
+        <button mat-button (click)="openSnackBar()">edit</button>
+        <button mat-button (click)="openSnackBar()">comment</button>
+      </mat-card-actions>
+    </ng-template>
+
+    <!-- Comments -->
+    <div *ngIf="post.comments.length != 0">
+      Comments:
+    </div>
+    <div *ngFor="let comment of post.comments">
+      <mat-divider></mat-divider>
+      <h4 class="comment-div">{{comment.name}}</h4>
+      <mat-card-content [innerHTML]="comment.text"></mat-card-content>
+    </div>
+  </mat-card>
+</div>

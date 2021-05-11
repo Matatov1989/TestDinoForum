@@ -1,0 +1,75 @@
+[
+	{
+		"id":1277119800000,
+		"name":"Toby Price",
+		"date":"Jun 21, 2010, 11:30",
+		"text":"Love suffers long and is kind; love does not envy; love does not parade itself, is not puffed up; Does not behave rudely, does not seek its own, is not provoked, thinks no evil; Does not rejoice in iniquity, but rejoices in the truth.",
+		"comments":[
+		]
+	},
+	{
+		"id":1289981520000,
+		"name":"Tom York",
+		"date":"Nov 17, 2010, 08:12",
+		"text":"Choose a job you love, and you will never have to work a day in your life.",
+		"comments":[
+			{
+				"name":"Stive Melony",
+				"text":"World belongs to the patient.."
+			},
+			{
+				"name":"Jane Washington",
+				"text":"Every solution breeds new problems."
+			}
+		]
+	},
+	{
+		"id":1294653240000,
+		"name":"Brain Molco",
+		"date":"Jan 10, 2011, 09:54",
+		"text":"My mom always said life was like a box of chocolates. You never know what you're gonna get. ",
+		"comments":[
+			{
+				"name":"Michael J. Fox",
+				"text":"Doc, back in 1985!"
+			}
+		]
+	},
+
+	{
+		"id":1330458420000,
+		"name":"Kadzuky Nakadima",
+		"date":"Feb 28, 2012, 19:47",
+		"text":"And now here is my secret, a very simple secret: it is only with the heart that one can see rightly, what is essential is invisible to the eye. ",
+		"comments":[
+		]
+	},
+	{
+		"id":1408698000000,
+		"name":"Frank Billa",
+		"date":"Aug 22, 2014, 09:00",
+		"text":"Stretching his hand out to catch the stars, he forgets the flowers at his feet.",
+		"comments":[
+			{
+				"name":"Oscar Wilde",
+				"text":"Wisdom is knowing how little we know."
+			},
+			{
+				"name":"Mark Twain",
+				"text":"Facts are stubborn things, but statistics are more pliable."
+			}
+		]
+	},
+	{
+		"id":1583828100000,
+		"name":"Stefan Petrancel",
+		"date":"Mar 10, 2020, 08:15",
+		"text":"When you start thinking a lot about your past, it becomes your present and you can’t see your future without it.",
+		"comments":[
+			{
+				"name":"Yury Boiko",
+				"text":"Live without regrets. "
+			}
+		]
+	}
+]

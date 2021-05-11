@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Dino Forum</span>
+    <span class="example-spacer center" style="text-align:left">
+      <div *ngIf="userName">
+        Hi {{userName}}, Welcome to forum.
+      </div>
+    </span>
+
+    <!-- if user entered name, than view button edit, else view butto Log In -->
+    <div *ngIf="userName; else dialod">
+      <button matTooltip="Create New Post" (click)="onClick()" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+    <ng-template #dialod>
+      <button mat-flat-button (click)="openDialog()">Log In</button>
+    </ng-template>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
